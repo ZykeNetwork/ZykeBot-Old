@@ -16,7 +16,7 @@ const config = {
     "adminRole": "Administrator",
     "systemNotice": "true", 
     "welcomeChannel": "welcome",
-    "welcomeMessage": "Say hello to {{user}}, everyone! We all need a lazy welcome sometimes :D",
+    "welcomeMessage": "Hi {{user}}, Welcome to {{server}}. Now this server have {{memberCount}} members.",
     "welcomeEnabled": "false"
   },
 
