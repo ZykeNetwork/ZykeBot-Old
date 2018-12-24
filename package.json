@@ -2,10 +2,10 @@
   "name": "Lazy-Bot",
   "version": "0.3.7",
   "description": "Bot Discord Bot",
-  "main": "server.js",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node bot.js"
   },
   "engines": {
     "node": "10.3.0"
