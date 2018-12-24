@@ -11,13 +11,16 @@ const config = {
   
   "defaultSettings" : {
     "prefix": "?",
-    "modLogChannel": "mod-log",
+    "modLogChannel": "elections",
     "modRole": "Moderator",
     "adminRole": "Administrator",
     "systemNotice": "true", 
     "welcomeChannel": "welcome",
-    "welcomeMessage": "Say hello to {{user}}, everyone! We all need a lazy welcome sometimes :D",
-    "welcomeEnabled": "false"
+    "welcomeMessage": "Hi !user, welcome to !server. Now this server have !memberCount members. Please feel free to browse around and get to know the others. If you have any questions please don't hesitate to ask in our support forums. Kindly introduce yourself in #introductions.",
+    "welcomeEnabled": "true",
+	  "leaveChannel": "welcome",
+  	"leaveMessage": "Bye !user, Now this server have !memberCount members. Maybe he is no more Lazy.",
+    "leaveEnabled": "true"
   },
 
 
