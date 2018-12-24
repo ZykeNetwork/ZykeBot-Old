@@ -43,7 +43,6 @@
     "moment-duration-format": "^2.2.0",
     "opusscript": "0.0.6",
     "parse-json-response": "^1.0.1",
-    "parsejson": "0.0.3",
     "request-promise-native": "^1.0.5",
     "retrotext": "^3.0.1",
     "sqlite3": "^4.0.4",
