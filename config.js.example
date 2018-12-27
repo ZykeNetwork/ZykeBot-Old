@@ -8,7 +8,12 @@ const config = {
   "token": "your-token",
   
   "mashapekey": "Mashape-API-Key",
+  
+  "youtube": "YouTube API",
+  
+  "cat": "Cat API",
 
+ 
  
   
   "defaultSettings" : {
