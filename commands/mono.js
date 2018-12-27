@@ -1,20 +1,23 @@
+const Discord = require("discord.js");
 const request = require("request");
+const tempy = require("tempy");
+const fs = require("fs");
 const gm = require("gm").subClass({
   imageMagick: true
 });
 
 exports.run = async (client, message, args) => { // eslint-disable-line no-unused-vars
-const image = message.mentions.users.first().avatarURL
+if (!message.mentions.users.first()) return message.channel.send("Mention yourself as idoit");
+ const image = message.mentions.users.first().avatarURL
   if (image !== undefined) {
     message.channel.startTyping();
-    const ninegagWatermark = "./assets/images/brazzerswatermark.png";
-    gm(request(image)).composite(ninegagWatermark).gravity("SouthEast").strip().stream((error, stdout) => {
+    gm(request(image)).monochrome().strip().stream((error, stdout) => {
       if (error) throw new Error(error);
       message.channel.stopTyping();
       message.channel.send({
         files: [{
           attachment: stdout,
-          name: "brazzer.png"
+          name: "mono.png"
         }]
       });
     });
@@ -23,15 +26,14 @@ const image = message.mentions.users.first().avatarURL
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["brazzer"],
+  aliases: ["monochrome"],
   permLevel: "User"
 };
 
 exports.help = {
-  name: "brazzers",
-  category: "Image ",
-  description: "Add brazzers watermarks to user's avatar",
-  usage: "brazzers @mention"
+  name: "mono",
+  category: "Image",
+  description: "genrates monochrome image",
+  usage: "mono @mentin"
 };
-
 
