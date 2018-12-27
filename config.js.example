@@ -5,7 +5,9 @@ const config = {
 
   "support": "id-here",
 
-  "token": "your-toke",
+  "token": "your-token",
+  
+  "mashapekey": "Mashape-API-Key",
 
  
   
