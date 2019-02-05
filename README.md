@@ -1,5 +1,5 @@
 # ZykeBot
-ZykeBot is a Discord bot written in nodejs depending on discord.js latest version.  
+ZykeBot is a Discord bot written in Node.JS depending on discord.js latest version.  
 [Commands List](https://github.com/ZykeNetwork/ZykeBot/wiki/Commands)  
 
 ## How to host this bot yourself
