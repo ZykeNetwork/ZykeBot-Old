@@ -18,7 +18,7 @@ exports.run = async (client, message, args) => { // eslint-disable-line no-unuse
   .setAuthor(client.user.username, client.user.avatarURL) //optional you can remove it
 
   .setColor(4886754)
-  .setFooter("Lazy Bot", client.user.avatarURL) //optional you can remove it
+  .setFooter("ZykeBot", client.user.avatarURL) //optional you can remove it
   .setTimestamp() //optional
   .addField("Quote", body[0].quote)
   .addField("Author", body[0].author,true)

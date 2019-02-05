@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
   .setAuthor(`${message.author.username} Requested Avatar!`, message.author.avatarURL)
   .setColor(4886754)
-  .setFooter("© Lazy BOT", client.user.avatarURL)
+  .setFooter("© ZykeBot", client.user.avatarURL)
   .setImage(message.author.avatarURL)
   .setTimestamp();
  
@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
   .setAuthor(`${message.author.username} Requested Avatar!`, message.author.avatarURL)
   .setColor(4886754)
-  .setFooter("© Lazy BOT", client.user.avatarURL)
+  .setFooter("© ZykeBot", client.user.avatarURL)
   .setImage(message.mentions.users.first().avatarURL)
   .setTimestamp();
  
@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.RichEmbed()
   .setAuthor(`${message.author.username} Requested Avatar!`, message.author.avatarURL)
   .setColor(4886754)
-  .setFooter("© Lazy BOT", client.user.avatarURL)
+  .setFooter("© ZykeBot", client.user.avatarURL)
   .setImage(message.author.avatarURL)
   .setTimestamp();
  

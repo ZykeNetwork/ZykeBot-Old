@@ -14,19 +14,18 @@ const config = {
   "cat": "Cat API",
 
  
- 
   
   "defaultSettings" : {
     "prefix": "?",
-    "modLogChannel": "elections",
+    "modLogChannel": "mod-log",
     "modRole": "Moderator",
     "adminRole": "Administrator",
     "systemNotice": "true", 
     "welcomeChannel": "welcome",
-    "welcomeMessage": "Hi !user, welcome to !server. Now this server have !memberCount members. Please feel free to browse around and get to know the others. If you have any questions please don't hesitate to ask in our support forums. Kindly introduce yourself in #introductions.",
+    "welcomeMessage": "Hi !user, welcome to !server. Now we became !memberCount members! Feel free to browse around and get to know the others. If you have any questions, ask right away!",
     "welcomeEnabled": "true",
-	  "leaveChannel": "welcome",
-  	"leaveMessage": "Bye !user, Now this server have !memberCount members. Maybe he is no more Lazy.",
+	"leaveChannel": "welcome",
+	"leaveMessage": "Goodbye !user, now this server has !memberCount members. Good Luck on whatever you do!",
     "leaveEnabled": "true"
   },
 

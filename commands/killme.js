@@ -8,14 +8,14 @@ exports.run = function(client, message) {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["killyou", "sucide"],
+  aliases: ["killyou", "suicide"],
   permLevel: "User"
 };
 
 exports.help = {
   name: "killme",
   category: "Fun",
-  description: "Use with care this will Kill you",
+  description: "Use with caution, this will kill you.",
   usage: "killme"
 };
 
