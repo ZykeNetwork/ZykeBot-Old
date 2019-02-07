@@ -32,6 +32,6 @@ exports.help = {
   name: "approved",
   category: "Image",
   description: "Approve Someone",
-  usage: "approved @username"
+  usage: "approved @mentin"
 };
 

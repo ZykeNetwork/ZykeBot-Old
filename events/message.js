@@ -1,7 +1,7 @@
-
+const Discord = require('discord.js');
+const db = require('quick.db');
 
 module.exports = async (client, message) => {
-
   if (message.author.bot) return;
 
 

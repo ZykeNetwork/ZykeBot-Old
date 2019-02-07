@@ -16,7 +16,7 @@ require("./modules/functions.js")(client);
 
 client.commands = new Enmap();
 client.aliases = new Enmap();
-client.queue = new Enmap();
+
 client.settings = new Enmap({name: "settings"});
 
 
@@ -44,7 +44,8 @@ const init = async () => {
     const thisLevel = client.config.permLevels[i];
     client.levelCache[thisLevel.name] = thisLevel.level;
   }
-
+const Idiot = require("idiotic-api");
+client.API = new Idiot.Client("yAaXIlHWotUx3pIn0V9e");
   client.login(client.config.token);
 
 };
