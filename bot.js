@@ -45,7 +45,7 @@ const init = async () => {
     client.levelCache[thisLevel.name] = thisLevel.level;
   }
 const Idiot = require("idiotic-api");
-client.API = new Idiot.Client("yAaXIlHWotUx3pIn0V9e");
+client.API = new Idiot.Client("yFjujcjk9e");
   client.login(client.config.token);
 
 };
