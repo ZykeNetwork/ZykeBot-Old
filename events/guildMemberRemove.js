@@ -1,19 +1,14 @@
 const Discord = require("discord.js");
-module.exports = (client, member) => {
+module.exports = async (client, member) => {
   const settings = client.getSettings(member.guild.id);
 if (settings.leaveEnabled !== "true") return;
 
-const leaveMessage1 = settings.leaveMessage.replace("!user", `${member}`);
-const leaveMessage2 = leaveMessage1.replace("!server", `${member.guild.name}`);
-const leaveMessage3 = leaveMessage2.replace("!memberCount", `${member.guild.memberCount}`);
- let leaveembed = new Discord.RichEmbed()
-        .setTitle("A User Left")
-  .setColor(4886754)
-  .setDescription(leaveMessage3)
-  .setFooter("ID: " + member.user.id, member.user.avatarURL)
-  .setThumbnail(member.user.avatarURL)
-  .setTimestamp()
-  .addField("Full Username:", member.user.tag)
+ let leaveembed = await client.API.goodbye("gearz", member.user.bot, member.user.avatarURL, member.user.tag, member.user.tag,`${member.guild.name}#${member.guild.memberCount}`);
 
-  member.guild.channels.find(c => c.name === settings.leaveChannel).send(leaveembed).catch(console.error);
+  member.guild.channels.find(c => c.name === settings.leaveChannel).send({
+          files: [{
+            attachment: leaveembed,
+            name: "byeye.png"
+          }]
+        }).catch(console.error);
 };
