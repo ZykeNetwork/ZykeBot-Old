@@ -12,10 +12,12 @@ const config = {
   "youtube": "YouTube API",
   
   "cat": "Cat API",
+  
+  "IAPIToken": "TOP Secret ToKeN",
 
  
   
-  "defaultSettings" : {
+"defaultSettings" : {
     "prefix": "?",
     "modLogChannel": "mod-log",
     "modRole": "Moderator",
@@ -23,10 +25,12 @@ const config = {
     "systemNotice": "true", 
     "welcomeChannel": "welcome",
     "welcomeMessage": "Hi !user, welcome to !server. Now we became !memberCount members! Feel free to browse around and get to know the others. If you have any questions, ask right away!",
-    "welcomeEnabled": "true",
+    "WelcomeType": "image",
+	"welcomeEnabled": "true",
 	"leaveChannel": "welcome",
 	"leaveMessage": "Goodbye !user, now this server has !memberCount members. Good Luck on whatever you do!",
-    "leaveEnabled": "true"
+    "leaveEnabled": "true",
+	"announcementChannel": "announcement"
   },
 
 
