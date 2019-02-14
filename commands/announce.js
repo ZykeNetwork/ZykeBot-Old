@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 exports.run = async (message, args) => { // eslint-disable-line no-unused-vars
-const settings = client.getSettings(member.guild.id);
-    const announcement = args.join(" ");
+const channel = member.guild.channels.find("name", settings.announcementChannel);   
+if (!channel) return; 
+const announcement = args.join(" ");
     message.delete().catch(O_o=>{});
 	let announcementembed = new Discord.RichEmbed()
         .setTitle(":loudspeaker: Announcement")
@@ -11,8 +12,8 @@ const settings = client.getSettings(member.guild.id);
   .setTimestamp()
   .addField("© ZykeBot");
   
+        channel.send(announcementembed).catch(console.error);
 
-  member.guild.channels.find(c => c.name === settings.announcementChannel).send(announcementembed).catch(console.error);
 };
 
 exports.conf = {
