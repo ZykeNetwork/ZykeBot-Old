@@ -42,7 +42,7 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ["block"],
-  permLevel: "User"
+  permLevel: "Moderator"
 };
 
 exports.help = {

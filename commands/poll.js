@@ -1,23 +1,23 @@
 const Discord = require("discord.js");
-exports.run = (client, message, args) => {
+exports.run = async (client, message, args) => {
 	let question = args.slice(0).join(" ");
 
   if (args.length === 0)
-  return message.reply('**Invalid Format:** `!Poll <Question>`')
+  return message.reply('**Invalid Format:** `?poll <Question>`')
 
   const embed = new Discord.RichEmbed()
   .setTitle("A Poll Has Been Started!")
   .setColor("#5599ff")
   .setDescription(`${question}`)
-  .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`)
+  .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`);
 
-  message.channel.send({embed})
-  .then(msg => {
-    msg.react('\:thumbsup:')
-	msg.react('\:thumbsdown:')
-	msg.react('\:shrug:')
-  })
-  .catch(() => console.error('Emoji failed to react.'));
+  let msg = await message.channel.send({embed});
+
+   await msg.react('ğŸ‘');
+   await msg.react('ğŸ¤·');
+   await msg.react('ğŸ‘');
+   
+   message.delete({timeout: 1000});
 
 }
 exports.conf = {
