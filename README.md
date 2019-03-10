@@ -16,3 +16,4 @@ This bot was made in Pakistan with love by [Ranakhas](https://github.com/ranakha
 2. [Muhammad Aqib Hussain](https://mahofficial.win/)
 3. [Christos P.](https://pctipsgr.uk.to)
 4. [Arcenas090](https://arcenas090.me)
+5. [Yağızhan Y.](https://yagizhan49.me)
