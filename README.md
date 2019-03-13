@@ -1,4 +1,5 @@
 # ZykeBot
+![ZykeBot on DiscordBotsList](https://discordbots.org/api/widget/529289749182283806.svg)
 ZykeBot is a Discord bot written in Node.JS depending on discord.js latest version.  
 [Commands List](https://bot.zyke.me/doc/)  
 
