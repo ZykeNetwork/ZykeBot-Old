@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/ZykeNetwork/ZykeBot#readme",
    "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "better-sqlite-pool": "^0.1.2",
     "canvas": "^1.6.7",
     "canvas-constructor" : "2.1.1",
